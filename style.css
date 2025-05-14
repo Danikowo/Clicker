@@ -1,0 +1,140 @@
+body {
+	text-align: center;
+	justify-content: center;
+	background-color: rgb(255, 255, 255);
+}
+.butPr {
+	background-color: darkorange;
+	border: 2px solid rgb(121, 0, 0);
+	padding: 15px 15px;
+	font-size: large;
+	
+}
+.butPr:active 
+{
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.877);
+}
+.butPr:hover
+{
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.568);
+	cursor: pointer;
+}
+#BL {
+	width: 30%;
+}
+.animtext {
+	animation: textup 1s ease-out;
+	position: absolute;
+}
+@keyframes textup {
+	from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(-100px);
+		opacity: 0;
+	}
+}
+
+#click {
+	width: 400px;
+	height: 250px;
+	background-image: url(ClickIcon1.png);
+	background-size: 100% 100%;
+	margin: 0 auto;
+}
+#click:hover{
+	cursor: pointer;
+}
+#ButtonShop {
+	width: 80px;
+}
+#ButtonShop:hover
+{
+	cursor: pointer;
+}
+#shop {
+	border: 0 solid rgba(255, 255, 255, 0);
+	background-color: rgba(255, 255, 255, 0);
+}
+.containerButton {
+	width: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 40%;
+}
+
+#dialog {
+	width: 500px;
+	height: 500px;
+	background-color: rgb(72, 255, 185);
+	border: 0px;
+	box-shadow: 2px 2px 5px black;
+}
+#dialog::backdrop {
+	background-color: rgba(1, 4, 48, 0.384);
+}
+
+#X {
+	display: flex;
+	justify-content: right;
+	margin-top: -3%;
+}
+
+#exit {
+	background-color: rgb(255, 57, 57);
+	border: 0px;
+	width: 25px;
+	height: 25px;
+	font-weight: 700;
+}
+#exit:hover
+{
+	cursor: pointer;
+}
+
+#TextShop {
+	margin-top: -6%;
+}
+
+.shopButton
+{
+	background-color: rgb(206, 113, 0);
+	border: 1px solid rgb(0, 0, 0);
+	margin: 2% 2%;
+	font-size: large;
+	position: relative;
+	text-decoration: none;
+	color: black;
+	
+}
+.shopButton::after {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: rgb(255, 174, 0);
+	transition: width 0.3s;
+}
+.shopButton:hover::after {
+	width: 100%;
+}
+.shopButton:hover {
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+}
+.shopButton span {
+	z-index: 2;
+	position: relative;
+}
+
+#Money
+{
+	display: flex;
+	justify-content: left;
+	margin-top: -8%;
+}

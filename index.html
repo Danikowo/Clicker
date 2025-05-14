@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="Game">
+			<p>Cчет: <span id="score">0</span></p>
+			<div id="click"></div>
+		<div id="shop">
+			<dialog id="dialog">
+				<div id="X"><button onclick="close_but()" id="exit" >X</button></div>
+			
+				<h2 id="TextShop">Магазин</h2>
+				<h3 id="Money">Деньги: <span id="Moneylol">0</span></h3>
+				<h2 id="Fon">Фоны:</h2>
+				<button onclick="BuyBackground1()" id="ColorBackGround" class="shopButton">
+					 <span id="priceBackGround1">Фон: <span id="priceBack1">20</span></span></button>
+				<button onclick="BuyBackground2()" id="ColorBackGround2" class="shopButton">
+				 <span id="priceBackGround2">	Фон:<span id="priceBack2">30</span></span></button>
+				<button onclick="BuyBackground3()" id="ColorBackGround3" class="shopButton">
+					 <span id="priceBackGround3">Фон:<span id="priceBack3">45</span></span></button>
+				<button onclick="BuyBackground4()" id="ColorBackGround4" class="shopButton">
+					<span id="priceBackGround4"> Фон:<span id="priceBack4">65</span></span></button>
+					
+					<h2 id="ClickIcon">Клик</h2>
+					<button id="ClickIcon1" class="shopButton"><span>Куплено</span></button>
+					<button onclick="BuyClickIcon2()" id="ClickIcon2"  class="shopButton">
+				<span id="priceClickIcon2"> Иконка клика: <span id="priceIcon2">35</span> </span></button>
+				<button onclick="BuyClickIcon3()" id="ClickIcon3" class="shopButton">
+				<span id="priceClickIcon3">Иконка клика: <span id="priceIcon3">45</span></span></button>
+					<button onclick="BuyClickIcon4()" id="ClickIcon4" class="shopButton">
+						<span id="priceClickIcon4">Иконка клика: <span id="priceIcon4">60</span></span></button>
+					<button onclick="BuyClickIcon5()" id="ClickIcon5" class="shopButton">
+						<span id="priceClickIcon5">Иконка клика: <span id="priceIcon5">70</span></span></button>
+					<button onclick="BuyClickIcon6()" id="ClickIcon6" class="shopButton">
+						<span id="priceClickIcon6">Иконка клика: <span id="priceIcon6">80</span></span></button>
+					<button onclick="BuyClickIcon7()" id="ClickIcon7" class="shopButton">
+						<span id="priceClickIcon7">Иконка клика: <span id="priceIcon7">95</span></span></button>
+
+					<h2>Бонусы</h2>
+					<button onclick="BonusX2()" id="X2" class="shopButton">
+						
+						<span>Сила клика X2: <span id="priceX2">150</span> </span>
+					</button>
+					<button onclick="SkidkaX2()" id="SkidX2" class="shopButton">
+						<span>Скидка на товары X2: <span id="priceSkidkaX2">150</span> </span>
+					</button>
+			</dialog>
+		  
+
+			<div class="containerButton">
+				<button onclick="upgradeClick()" class="butPr">
+					Сила клика <span id="priceClick">10</span>
+				</button>
+				<button onclick="autoClick()" class="butPr">
+					Автокликер <span id="priceAuto">50</span>
+				</button>
+				<button onclick="open_but()" id="shop">
+					<img src="146855.png" id="ButtonShop" />
+				</button>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
