@@ -251,6 +251,7 @@ function BonusX2(){
 		if (score >= BonusX2Cost) {
 		score -= BonusX2Cost;
 		clickPower *= 2;
+		autoClickerPower *= 2;
 		priceX2 = "Куплено на 30 секунд"
 		document.getElementById("score").innerHTML = score;
     document.getElementById("X2").style.background = "grey"
@@ -258,6 +259,7 @@ function BonusX2(){
 			document.getElementById("Moneylol").innerHTML = score;
 		setTimeout(function(){
 			clickPower /= 2;
+			autoClickerPower /= 2;
 			BonusX2Cost *= 2;
 			priceX2 = BonusX2Cost;
 			document.getElementById("priceX2").innerHTML = priceX2;	
